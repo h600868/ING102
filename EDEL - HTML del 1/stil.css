@@ -1,0 +1,60 @@
+.hele {
+  text-align: center;
+  background-color: rgba(122, 238, 242, 0.0);
+  font-family: Verdana, sans-serif;
+}
+/* overskrifr */
+.overskrift {
+  text-align: center;
+  font-size: 25;
+  color: black;
+  background-color: rgba(122, 238, 242, 0.5);
+
+}
+/* gir mellomrom i navbaren */
+.inside {
+  margin: 0 30px 0 0;
+}
+/* navbaren mtp mellomrom, høyde, farge osv */
+.inside a {
+  clear: right;
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  line-height: 70px;
+  text-align: left;
+}
+/* Navbar */
+.navbar {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  height: 50px;
+  line-height: 40px;
+  z-index: 1;
+}
+/* Farge - hover over linker */
+a:hover {
+  background-color: lightgrey;
+}
+/* Gir understrek på aktiv side */
+.navbar a.active {
+ color: #992600;
+ border-bottom: 1px solid black;
+}
+.tabell, th, td {
+  border: 1px solid black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.forsideTxt {
+
+}
+.kartTxt {
+  
+}
+.liste {
+  display: inline-block;
+  text-align: left;
+}
