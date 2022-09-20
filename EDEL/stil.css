@@ -42,3 +42,9 @@ a:hover {
  color: #992600;
  border-bottom: 1px solid black;
 }
+.tabell, th, td {
+  border: 1px solid black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
