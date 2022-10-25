@@ -1,22 +1,89 @@
-<!DOCTYPE html utf - 8>
-<html>
+<!DOCTYPE html>
+<html lang="no">
 <head>
   <meta charset="utf-8">
-<title>FAQ - EDEL</title>
+  <link rel="stylesheet" type="text/css" href="stil.css">
+<title>EDEL</title>
 </head>
 <body>
+    <div class="hele">
 
-<h1>EDEL - For deling av elektriske kjøretøy</h1>
+      <div class="overskrift">
+        <h1>EDEL</h1>
+      </div>
       <div class="navbar">
-          <a style="color:black" href="index.html">Hjem</a>
-          <a style="color:black" href="tjenester.html">Våre Tjenester</a>
-          <a style="color:black" href="kjøretøy.html">Kjøretøy</a>
-          <a style="color:black" href="kart.html">Finn Frem</a>
-          <a style="color:black" href="faq.html">FAQ</a>
-          <a style="color:black" href="omedel.html">Om EDEL</a>
-          <a style="color:black" href="kontaktoss.html">Kontakt oss</a>
+          <div class="inside">
+            <a style="color:black" href="index.html">Hjem</a>
+            <a style="color:black" href="tjenester.html">Våre Tjenester</a>
+            <a style="color:black" href="kjoretoy.html">Kjøretøy</a>
+            <a style="color:black" href="kart.html">Finn Frem</a>
+            <a style="color:black" href="faq.html">FAQ</a>
+            <a style="color:black" href="omedel.html">Om EDEL</a>
+          </div>
+      </div>
+      <br><br><br>
+
+          <h2>Ofte stilte spørsmål</h2>
+            <br><br>
+            <button class="faq">Er jeg dekt 100% av forsikringen?</button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="faq">Kan man beholde bilen så lenge man vil?</button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="faq">Må jeg selv betale for ladingen etter endt kjøring?</button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="faq">Hva skjer om man får fartsbot?</button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="faq">Kan bilen leveres på et annet sted enn det originale utlånsstedet?</button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="faq">Hva skjer om man påfører skader på kjøretøyet?</button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="faq">Må man ha hjelm på sykkel?</button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+      <br><br><br>
+      <div class="footer">
+          <footer>
+              <p class ="stor">EDEL - Fremtiden av bildeling</p>
+              <p>2022 © Copyright - EDEL</p>
+          </footer>
       </div>
 
+      <script>
+          var acc = document.getElementsByClassName("faq");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+        </script>
 
 </body>
 </html>
